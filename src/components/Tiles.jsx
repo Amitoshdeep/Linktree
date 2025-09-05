@@ -8,7 +8,7 @@ function Tiles({nm = '', lnk=''}) {
       <ShinyText
         text={nm}
         disabled={false}
-        speed={5}
+        speed={3}
         className='custom-class font-poppins text-[#ffffff90] group-hover:text-white duration-300'
 
       />
