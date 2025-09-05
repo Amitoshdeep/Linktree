@@ -7,7 +7,6 @@ import ShinyText from '../components/ShinyText';
 // import '../index.css';
 import CircularTiles from '../components/CircularTiles';
 import Tiles from '../components/Tiles';
-import StarBorder from '../components/StarBorder';
 import Aurora from '../components/Aurora';
 
 function Home() {
@@ -17,6 +16,8 @@ function Home() {
   const [PlaylistLink] = useState(`https://music.youtube.com/playlist?list=PLjceNjMRpeAKbd-ADwTBNzNBEy-6lQWA2&si=iV68snSw-NgA7Dwv`);
   const [GithubLink] = useState(`https://github.com/Amitoshdeep`);
   const [PortfolioLink] = useState(`https://amitx.netlify.app`);
+
+  const [contact, setContact] = useState(true);
 
   return (
     <>
@@ -84,6 +85,20 @@ function Home() {
               lnk={PlaylistLink}
             />
           {/* </StarBorder> */}
+
+        <div
+          className='font-bold font-poppins text-sm flex justify-evenly w-full overflow-hidden relative'
+          // to='/contact'
+        >
+          <p className= {`p-4 backdrop-blur-2xl rounded-4xl absolute z-20 flex items-center gap-4 duration-300 ${contact ? 'translate-x-[-500px]' : 'translate-x-0' }`}>
+            amitosh.dev@outlook.com
+            <i class="fi fi-br-cross-small flex text-xl cursor-pointer" onClick={()=>setContact(!contact)}></i>
+          </p>
+
+          <p className='p-4 backdrop-blur-2xl rounded-4xl cursor-pointer' onClick={()=>setContact(!contact)}>
+            CONTACT ME
+          </p>
+        </div>
 
         </div>
 
