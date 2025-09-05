@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme{
+  --font-fugaz: "Fugaz One", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  --color-white40: #ffffff40;
+  --color-white30: #ffffff30;
+
+  --animate-shine: shine 2s linear infinite;
+  --animate-star-movement-bottom: star-movement-bottom linear infinite alternate;
+  --animate-star-movement-top: star-movement-top linear infinite alternate;
+
+  @keyframes shine {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  @keyframes star-movement-bottom {
+    0%{
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+    100%{
+      transform: translate(-100%, 0%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes star-movement-top {
+    0%{
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+    100%{
+      transform: translate(100%, 0%);
+      opacity: 1;
+    }
+  }
+
+}
+
+.lg{
+  @apply flex group-hover:text-white group-hover:scale-[1.1] duration-300;
+}
+
