@@ -45,7 +45,7 @@ function App() {
       </div>
 
       {/* Scrollable foreground content */}
-      <div className="relative z-10 min-h-screen text-white flex flex-col gap-3 justify-center items-center p-4 md:p-0">
+      <div className="relative z-10 min-h-[100dvh] text-white flex flex-col gap-3 justify-center items-center p-4 md:p-0">
 
         {/* IMAGE PFP ... GONNA CHANGE IN FUTURE*/}
         <div className='h-32 aspect-square overflow-hidden rounded-full border-8 border-white30 backdrop-blur-3xl'>
