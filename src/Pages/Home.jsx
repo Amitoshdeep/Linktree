@@ -20,29 +20,6 @@ function Home() {
 
   return (
     <>
-      {/* Fixed galaxy background */}
-      <div className="fixed inset-0 -z-10 bg-black">
-        <SplashCursor />
-        {/* <Particles
-          particleColors={['#ffffff', '#ffffff']}
-          particleCount={300}
-          particleSpread={10}
-          speed={0.2}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={true}
-          disableRotation={true}
-        /> */}
-
-        <Aurora
-          colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
-          blend={0.5}
-          amplitude={1.0}
-          speed={1}
-        />
-
-
-      </div>
 
       {/* Scrollable foreground content */}
       <div className="relative z-10 min-h-[100dvh] text-white flex flex-col gap-3 justify-center items-center p-4 md:p-0">
