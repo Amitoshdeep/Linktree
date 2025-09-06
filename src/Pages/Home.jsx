@@ -90,7 +90,7 @@ function Home() {
           className='font-bold font-poppins text-sm flex justify-evenly w-full overflow-hidden relative'
           // to='/contact'
         >
-          <p className= {`p-4 backdrop-blur-2xl rounded-4xl absolute z-20 flex items-center gap-4 duration-300 ${contact ? 'translate-x-[-500px]' : 'translate-x-0' }`}>
+          <p className= {`p-4 backdrop-blur-2xl rounded-4xl absolute z-20 flex items-center gap-4 duration-300 ${contact ? 'translate-y-[150px]' : 'translate-y-0' }`}>
             <p className='hover:underline cursor-pointer duration-300' onClick={()=>window.location.href=`mailto:amitosh.dev@outlook.com`}>amitosh.dev@outlook.com</p>
             <i class="fi fi-br-cross-small flex text-xl cursor-pointer" onClick={()=>setContact(!contact)}></i>
           </p>
