@@ -7,7 +7,7 @@ import Squares from '../components/Squares';
 function Home() {
   const [igLink] = useState('https://www.instagram.com/luv2lag/');
   const [linkedinLink] = useState('https://www.linkedin.com/in/amitoshdeep/');
-  const [ytLink] = useState('https://www.youtube.com/@Luv2Lag');
+  const [ytLink] = useState('https://www.youtube.com/@lowkeylazyy');
   const [playlistLink] = useState(
     'https://music.youtube.com/playlist?list=PLjceNjMRpeAKbd-ADwTBNzNBEy-6lQWA2&si=iV68snSw-NgA7Dwv'
   );
